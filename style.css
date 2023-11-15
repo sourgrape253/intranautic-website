@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif; 
+  color: #222;
+  scroll-behavior: smooth;
+  /*position: relative;*/
+}
+
+
+/*Navbar Style*/
+.navbar{
+  overflow: hidden;
+}
+nav-link{
+  font-size: 1.1em !important;
+}
+
+.nav-item{ 
+  text-align: right; 
+}
+
+/*Carouosel Style*/
+.carousel-inner .carousel-item{
+  max-width: 100%;
+  max-height: 100%;
+  position: fixed;
+  z-index: -2;
+}
+.carousel-item:after{
+  content:"";
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.5);
+  .transition(.1s ease-in-out left);
+}
+
+/*Main Title*/
+.main-heading-text{
+    font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+  z-index: 1;
+  color:white;
+}
+
+.main-heading{
+  background: rgba(255,255,255,0.5) !important;
+}
+
+/*.padding{
+  padding-bottom: 2rem;
+}*/
+
+header.masthead {
+    padding-top: 50.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #fff;
+    background-image: url(img/nick1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+header.masthead .masthead-heading {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+    margin-bottom: 2rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+/*Discography Style*/
+#portfolio .portfolio-item {
+  right: 0;
+  margin: 0 0 15px; 
+  text-align: center;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+  position: relative;
+  display: block;
+  max-width: 300px;
+  /*max-height: 100%;*/
+  height:auto;
+  margin: 0 auto;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#portfolio .portfolio-item .portfolio-link img {
+  max-width: 100%;
+  /*max-height: 100%;*/
+  height:auto;
+  transition: transform 0.7s ease;
+  text-align: center;
+}
+
+#portfolio .portfolio-item .portfolio-link:hover img {
+transform: scale(1.1);
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+  margin: 0;
+  text-transform: none;
+}
+
+#portfolio .portfolio-item .portfolio-caption p {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#portfolio * {
+  z-index: 2;
+}
+
+
+
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0!important;
+
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#fixed {
+  background-image: url('img/tym1.jpg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+    filter: brightness(100%);
+}
+
+
+/*Footer Style*/
+footer{
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .carousel-caption{
+  position: relative;
+  bottom: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  #portfolio .portfolio-item {
+   margin: 0 0 30px;
+  }
+.carousel-caption{
+  position: relative;
+  bottom: 20%;
+  }
+}
+
+@media (max-width: 576px) {
+.carousel-caption{
+  position: relative;
+  bottom: 0%;
+  }
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
